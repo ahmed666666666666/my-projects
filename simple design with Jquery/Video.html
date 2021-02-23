@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("https://occ-0-4609-784.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABRKPZ4XvUZedOPILaRDbSZIU7RnzhHMsG9cuOjdWjARskD3cOKnkOQ8_M7DWxX5sK4QkdHUMqbuyzQfBjVnhfSfHBOVk.webp?r=238");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .conitaner{
+            width: 70%;
+            height: 500px;
+            margin: 0 auto;
+            z-index: 1;
+             transform: translateY(10%);
+        }
+
+            #myvideo{
+                height:500px;
+                width: 100%;
+                }
+                #contr_container{
+                    position: absolute;
+                    transform: translateY(10%);    
+                    z-index: 5;
+                    opacity: 0;
+                    left: 205px;
+                    height:500px;
+                    width: 70%;
+                    background-color: black;
+                }
+                #contr_container:hover{
+                    opacity: .5;
+                }
+
+                #play{
+
+                    transform: translateX(405%) translateY(180%);
+                }
+                
+                #pause{
+                       visibility: hidden; 
+                        transform: translateX(300%) translateY(180%);   
+                 }
+                 #previous{
+
+                    transform: translateX(-200%)  translateY(180%);
+             }
+             #next{
+
+                transform: translateX(560%)  translateY(180%);  
+        }
+        progress{
+            height: 40px;
+        }
+        .progressBackground{
+            width:95%;
+            background-color: white;
+            transform: translateX(20px) translateY(300px);
+        }
+
+        .progress{
+            height: 7px;
+            border-radius: 27px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .progressValue{
+            width:0px;
+            background-color: #E40814;
+            border-radius: 27px;
+        }
+#full{
+
+    transform: translateY(395px) translateX(430px) ;
+}
+
+#nav_bar{
+
+height: 64px;
+background-color: #141414;
+
+}
+#nav_bar span{
+color: #FFFF;
+font-family: Arial, Helvetica, sans-serif ;
+font-size: 30px;
+float: left;
+margin-left: 209px;
+margin-top: 18px;
+}
+#nav_bar ul{
+color: #FFFF;
+font-family: Arial, Helvetica, sans-serif ;
+float: right;
+display: flex;
+list-style-type: none;
+margin-right: 220px;
+margin-top: 25px;
+font-size: 15px;
+}
+#nav_bar ul li {
+margin-left: 20px;
+list-style-type: none;
+}
+
+#nav_bar ul li a {
+color: white;
+text-decoration: none;   
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+         
+        <div id="nav_bar">
+        
+            <span>MovieFelix</span>
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./Video.html">Video</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </div>
+        <div> 
+    </header>
+
+    <div id="contr_container" onclick="event.stopPropagation()">
+
+        <img src="./play-button.png" onclick="play1();"  id="play" width="100px" height="100px">
+        <img src="./pause.png" id="pause" onclick="pause1()" width="100px" height="100px" >
+        <img src="./next.png" id="next" onclick="moveForward()" width="100px" height="100px" >
+        <img src="./previous.png" id="previous" onclick="moveBackward()" width="100px" onclick="" height="100px" >
+        <img  src="./fullscreen (1).png" id="full" onclick="fullScreen()" width="80px" height="80px">
+        <div id="progressBackground" class="progress progressBackground">
+            <div id="progressValue" class="progress progressValue"></div>
+        </div>
+    </div>
+    
+    <div class="conitaner">
+        <video  class="video" id="myvideo">
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg">
+            you browser not support video tag
+        </video>
+            
+
+    </div>
+
+</body>
+    <script>
+//variables
+let videoId=1;
+
+let myVideo = document.getElementById("myvideo");
+        var play = document.getElementById("play");
+        var pause = document.getElementById("pause");
+        var next = document.getElementById("next");
+        var previous = document.getElementById("previous");
+        var full = document.getElementById("full");        
+        let progressValue = document.getElementById("progressValue");
+        let progressBackground = document.getElementById("progressBackground"); 
+        
+        //functions
+        progressBackground.addEventListener("click",function(e){
+            let maxWidth = progressBackground.clientWidth;
+            let barValue = e.offsetX;
+            let barValuePercent = barValue/maxWidth;
+            let currentTime = myVideo.duration * barValuePercent;
+            myVideo.currentTime = currentTime;
+        
+        });
+
+        function play1(){
+        myVideo.play();
+        pause.style.visibility = "visible";
+        play.style.visibility = "hidden";
+        }
+        function pause1(){
+        myVideo.pause();
+        pause.style.visibility = "hidden";
+        play.style.visibility = "visible";
+        }
+
+        function fullScreen(){
+       
+            myVideo.webkitEnterFullScreen();
+
+
+        }
+        function moveForward(){
+            myVideo.currentTime += 1;
+        }
+        function moveBackward(){
+            myVideo.currentTime += 1;
+        }
+        function getProgressBarWidth(){
+            return new Promise(function(resolve,reject){
+                
+                    let t = setInterval(function(){
+                        if(progressBackground.clientWidth>0){
+                            clearInterval(t);
+                            resolve(progressBackground.clientWidth);
+                        }
+                    },10);
+            });
+        }
+
+        
+
+        myVideo.addEventListener("loadedmetadata",async function(e){
+            console.log(myVideo.duration);
+
+            if(localStorage["video"+videoId]){
+                myVideo.currentTime = Number(localStorage["video"+videoId]);
+
+                let maxWidth = await getProgressBarWidth();
+        
+                console.log(maxWidth,(myVideo.currentTime/myVideo.duration) *maxWidth)
+
+                progressValue.style.width = ((myVideo.currentTime/myVideo.duration) *maxWidth)+"px" ;
+            
+            }
+            //myProgressBar.max = myVideo.duration;
+        })
+
+        myVideo.addEventListener("timeupdate",function(e){
+            localStorage["video"+videoId] = myVideo.currentTime;
+            
+            let maxWidth = progressBackground.clientWidth;
+            progressValue.style.width = ((myVideo.currentTime/myVideo.duration) *maxWidth)+"px" ;
+        })
+
+    </script>
+</html>

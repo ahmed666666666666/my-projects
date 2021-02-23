@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+        }
+        #nav_bar{
+
+height: 64px;
+background-color: #E50914;
+}
+#nav_bar span{
+color: #FFFF;
+font-family: Arial, Helvetica, sans-serif ;
+font-size: 30px;
+float: left;
+margin-left: 209px;
+margin-top: 18px;
+}
+#nav_bar ul{
+color: #FFFF;
+font-family: Arial, Helvetica, sans-serif ;
+float: right;
+display: flex;
+list-style-type: none;
+margin-right: 220px;
+margin-top: 25px;
+font-size: 15px;
+}
+#nav_bar ul li {
+margin-left: 20px;
+list-style-type: none;
+}
+
+#nav_bar ul li a {
+color: white;
+text-decoration: none;   
+}
+
+article{
+    background-color: #E50914;
+    width: 50%;
+    height: 680px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+article button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    position: relative;
+    left: 25%;
+    top: 50px;
+    color: #fff;
+    font-size: 30px;
+    background-color: #1877F2;
+}
+
+
+
+form{
+    position: relative;
+    top: 10%;
+    left:25% ;
+}
+form input{
+        width: 40%;
+        height: 50px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+}
+form input:nth-of-type(5){
+        width: 12px;
+        height: 12px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        position: relative;
+        
+}
+
+#s{
+    background-color:#1877F2;
+    position: relative;
+    border: solid 1px #fff;
+    top: 80px;
+    left: -100px;
+    color: #fff;
+
+}
+
+
+    </style>
+</head>
+<body>
+     
+    <header>
+         
+        <div id="nav_bar">
+        
+            <span>MovieFelix</span>
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./Video.html">Video</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </div>
+        <div> 
+    </header>
+    <article>
+        <form>
+            Name <input type="text"><br/>
+            birth <input type="date"><br/>
+            Email <input type="text"><br/>
+            Password   <input type="password"><br/>     
+           <input type="checkbox" > Keep me sign in 
+            <input id="s" type="submit" value="Sign Up">
+        </form>
+    </article>
+</body>
+</html>

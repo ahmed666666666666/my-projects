@@ -1,0 +1,180 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#nav_bar{
+
+    height: 64px;
+    background-color: #141414;
+    
+}
+#nav_bar span{
+color: #FFFF;
+font-family: Arial, Helvetica, sans-serif ;
+font-size: 30px;
+float: left;
+margin-left: 209px;
+margin-top: 18px;
+}
+#nav_bar ul{
+    color: #FFFF;
+    font-family: Arial, Helvetica, sans-serif ;
+    float: right;
+    display: flex;
+    list-style-type: none;
+    margin-right: 220px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+#nav_bar ul li {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+#nav_bar ul li a {
+    color: white;
+    text-decoration: none;   
+}
+header img{
+    background-clip: content-box;
+    
+}
+header div:nth-child(3){
+    height: 200px;
+    background-color:#141414;
+    position: absolute;
+    top: 590px;
+    
+}
+header div:nth-child(3) span{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 38%;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+
+  
+
+
+header div:nth-child(3) input{
+    width: 840px;
+    height: 55px;
+    margin-left: 270px;
+    margin-top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+     header div:nth-child(4){
+        position: absolute;
+        top: 130px;
+        transform: translateX(-100%);
+    }
+    
+    header div:nth-child(4) p:first-child{
+        color: #FFF;
+        font-size: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+    header div:nth-child(4) p:nth-child(2){
+        color: #FFF;
+        font-size:20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+    }
+    
+     header div:nth-child(5){
+        position: absolute;
+        top: 130px;
+        transform: translateX(50%);
+    }
+    
+    header div:nth-child(5) p:first-child{
+        color: #FFF;
+        font-size: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transform: translateX(12%);
+    }
+    
+    header div:nth-child(5) p:nth-child(2){
+        color: #FFF;
+        font-size:20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        transform: translateX(-10%);
+    }  
+    header div:nth-child(6){
+        position: absolute;
+        top: -200px;
+        left: 30%;
+    }
+    
+    header div:nth-child(6) p:first-child{
+        color: #FFF;
+        font-size: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+    header div:nth-child(6) p:nth-child(2){
+        color: #FFF;
+        font-size:20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        transform: translateX(-15%);
+    }
+
+#cont{
+    background-color:#141414;
+    height: 371px;
+    display: flexbox;
+    margin-top: 26px;
+}    
+
+    #card_container{
+        width: 912px;
+        height: 300px ;
+        margin: 0 auto;
+        position: relative;
+        top: 22px;
+        display: flex;
+    }
+
+ #card_container section{
+    width: 292px;
+    height: 300px;
+    background-color: white;
+    margin-right: 18px;
+    box-shadow:  0 0 4px 2px #999;
+}
+
+#card_container section p:first-of-type{
+   font-size: 40px;
+   position: relative;
+   left: 15%;
+}
+
+
+#card_container section p:nth-of-type(2){
+    position: relative;
+    left: 4%;
+    top: -7%;
+    width: 250px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;    
+}
+ 
+
+#card_container section:hover{
+
+    transform:scale3d(1.2,1.2,1);
+    cursor: pointer;
+}
+
+
