@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "993671285212",
+    "project_id": "diving-center",
+    "storage_bucket": "diving-center.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993671285212:android:86c854d6ebfa2484146719",
+        "android_client_info": {
+          "package_name": "com.example.divingcenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993671285212-6io70g7h6204h013q93e8s41to7gao12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.divingcenter",
+            "certificate_hash": "0f81fb4f7706e3638490f787d913478fc3175e48"
+          }
+        },
+        {
+          "client_id": "993671285212-f0jiv8kk31e10fbpd5ug4f3q30n6o899.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD575FUJVQINIFxOh0UVT2Qw2ISCFV0_fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993671285212-f0jiv8kk31e10fbpd5ug4f3q30n6o899.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

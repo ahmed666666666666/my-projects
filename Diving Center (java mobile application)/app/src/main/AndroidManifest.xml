@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.divingcenter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".CousesPaidActivity"></activity>
+        <activity android:name=".View.LicenceOrdderForAdminActivity" />
+        <activity android:name=".CardResulstActivity" />
+        <activity android:name=".CardResultActivity" />
+        <activity android:name=".OderedCorsesforAdminActivity" />
+        <activity android:name=".EquipmentOfUser" />
+        <activity android:name=".JourneyofUser" />
+        <activity android:name=".VisaActivity" />
+        <activity android:name=".LicenceatUserSideActivity" />
+        <activity android:name=".TrainerStartActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".PendingLicenesActivity" />
+        <activity android:name=".TrainerOredersActivity" />
+        <activity android:name=".EquipmentActivity" />
+        <activity android:name=".JourneyActivity" />
+        <activity android:name=".LicenceActivity" />
+        <activity
+            android:name=".AdminOrderActivity"
+            android:parentActivityName=".PagesActivity" />
+        <activity android:name=".CoursesUserActivity" />
+        <activity
+            android:name=".TrainerCourses"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".View.HomeActivityTrainer"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".PagesActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConfirmationActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

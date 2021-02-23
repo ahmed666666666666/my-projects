@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Licences_order"
+        android:id="@+id/Licences_order"
+        android:icon="@drawable/ic_baseline_bookmark_24">
+    </item>
+    <item android:title="courses_order"
+        android:id="@+id/courses_order"
+        android:icon="@drawable/ic_baseline_star_border_24"
+        >
+    </item>
+    <item android:title="courses_paid"
+        android:id="@+id/courses_paid"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        >
+    </item>
+
+    <item android:title="journy_order"
+        android:id="@+id/journey_order"
+        android:icon="@drawable/ic_baseline_emoji_transportation_24">
+    </item>
+
+    <item android:title="Equipments_order"
+        android:id="@+id/Equipments_order"
+        android:icon="@drawable/ic_baseline_construction_24">
+    </item>
+</menu>

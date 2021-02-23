@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <item android:title="Home"
+            android:id="@+id/trainer_home"
+            android:icon="@drawable/ic_baseline_home_24">
+        </item>
+
+        <item android:title="Profile"
+            android:id="@+id/trainer_profile"
+            android:icon="@drawable/ic_baseline_person_24">
+
+        </item>
+        <item android:title="Courses"
+            android:id="@+id/trainer_curses"
+              android:icon="@drawable/ic_baseline_sports_handball_24"
+            >
+
+        </item>
+        <item android:title="orders"
+            android:id="@+id/mas"
+            android:icon="@drawable/ic_baseline_emoji_transportation_24">
+        </item>
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Journey"
+        android:id="@+id/j"
+        
+        android:icon="@drawable/ic_baseline_emoji_transportation_24">
+
+    </item>
+    <item android:title="Equipment"
+        android:id="@+id/e"
+        android:icon="@drawable/ic_baseline_construction_24">
+    </item>
+    <item android:title="Licences"
+        android:id="@+id/l"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        >
+    </item>
+    <item android:title="CorsesOrded"
+        android:id="@+id/c_o"
+        android:icon="@drawable/ic_baseline_track_changes_24"
+        >
+    </item>
+    <item android:title="LicenceOrded"
+        android:id="@+id/l_o_a"
+        android:icon="@drawable/ic_baseline_local_police_24">
+    </item>
+
+</menu>

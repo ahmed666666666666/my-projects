@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    tools:showIn="navigation_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24">
+
+        </item>
+
+        <item android:title="Profile"
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_baseline_person_24">
+
+        </item>
+        <item android:title="Trainers"
+            android:id="@+id/trainer_list"
+              android:icon="@drawable/ic_baseline_sports_handball_24"
+            >
+
+        </item>
+        <item android:title="Journy"
+            android:id="@+id/journey"
+            android:icon="@drawable/ic_baseline_emoji_transportation_24">
+
+        </item>
+        <item
+            android:icon="@drawable/ic_baseline_construction_24"
+            android:id="@+id/equipments"
+            android:title="Equipments">
+
+        </item>
+        <item
+            android:id="@+id/levels"
+            android:icon="@drawable/ic_baseline_stairs_24"
+            android:title="Levels"
+            />
+
+        <item
+            android:id="@+id/licence"
+            android:icon="@drawable/ic_baseline_bookmark_24"
+            android:title="License">
+        </item>
+
+        <item
+            android:id="@+id/licence_details"
+            android:icon="@drawable/ic_baseline_bookmark_24"
+            android:title="License Details">
+        </item>
+<!--        <item android:id="@+id/logOut"-->
+<!--            android:title="log out"-->
+<!--            android:icon="@drawable/ic_baseline_login_24"-->
+<!--            />-->
+    </group>
+</menu>
