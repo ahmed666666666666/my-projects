@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- data-spy="scroll" data-target="#navbar-example" -->
+<body >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-example">
+    <a class="navbar-brand" href="#">MyApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item ">
+          <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#summary">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#footer">Download The App <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="display-4">Awesome App</h1>
+    <p class="lead">You should Download This Fantastic App</p>
+    <hr class="my-4">
+    <p>Want to know more? join our mailing list</p>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <form id="email-form">
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+          </div>
+          <div class="col-auto">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+              <input id="email" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col" id="summary">
+      <h1>why this app is awesome?</h1>
+      <p class="lead">Take a look at our behaviour</p>
+    </div>
+  </div>
+  <div class="container" id="card-container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1581746989955-6b19860dc7de?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fCUyM2phcGFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          
+          <h5 class="card-title"><i class="fa fa-anchor" aria-hidden="true"></i>Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1526359395878-56f9a884ea5a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGpvdXJueXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa fa-car" aria-hidden="true"></i>
+            Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1576397753762-206624e9a2cc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8JTIzamFwYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fa fa-wpexplorer" aria-hidden="true"></i>
+            Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="footer">
+      <div class="col">
+        <h2>Download This App !!!!!</h2>
+        <p class="lead">why should download this app?</p>
+        <a href="#"><img id="app-store" src="https://miro.medium.com/max/8982/1*V9-OPWpauGEi-JMp05RC_A.png"></a>
+      </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/javascript.js"></script>
+</html>
